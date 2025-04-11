@@ -10,13 +10,17 @@
 <body>
     <header>
         <div class="container">
-            <h1>SelfID</h1>
+            <div class="logo">
+                <img src="assets/logo.png" alt="SelfID Logo" width="40">
+                <h1>SelfID</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#features">Fonctionnalités</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#contribute">Contribuer</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +30,7 @@
         <div class="container">
             <h2>Contrôlez vos données. Monétisez votre identité.</h2>
             <p>SelfID est une plateforme d’identité numérique décentralisée basée sur la blockchain, vous permettant de gérer vos données personnelles, de les monétiser et d’accéder à des services en toute sécurité.</p>
-            <a href="#contribute" class="cta-button">Rejoignez le projet</a>
+            <a href="#contact" class="cta-button">Rejoignez-nous</a>
         </div>
     </section>
 
@@ -35,6 +39,7 @@
             <h2>À propos de SelfID</h2>
             <p>Dans un monde où les données personnelles sont exploitées par les grandes entreprises, SelfID redonne le pouvoir aux utilisateurs. Grâce à la blockchain, créez une identité numérique décentralisée (DID), contrôlez vos données et gagnez des tokens $SELF en les partageant de manière sélective.</p>
             <p>SelfID utilise des standards ouverts (W3C DID, Verifiable Credentials) pour garantir sécurité, interopérabilité et confidentialité.</p>
+            <a href="whitepaper.html" class="cta-button secondary">Lire le Whitepaper</a>
         </div>
     </section>
 
@@ -75,21 +80,38 @@
         </div>
     </section>
 
-    <section id="contribute">
+    <section id="contact">
         <div class="container">
-            <h2>Contribuez à SelfID</h2>
-            <p>SelfID est un projet open-source. Rejoignez notre communauté pour développer, tester ou promouvoir la plateforme.</p>
-            <a href="https://github.com/selfid-project" class="cta-button">Voir sur GitHub</a>
+            <h2>Contactez-nous</h2>
+            <p>Rejoignez la communauté SelfID ou posez vos questions via le formulaire ci-dessous.</p>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+                <input type="hidden" name="_subject" value="Nouveau message depuis SelfID">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://votre-nom-dutilisateur.github.io/selfid-project/thank-you.html">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Envoyer</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 SelfID. Tous droits réservés.</p>
+            <p>© 2025 SelfID. Tous droits réservés.</p>
             <ul>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Whitepaper</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="whitepaper.html">Whitepaper</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://github.com/selfid-project">GitHub</a></li>
             </ul>
         </div>
     </footer>
