@@ -22,7 +22,7 @@ body {
 header {
     background-color: #1a202c;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0; /* Augmentation du padding pour accueillir le texte plus grand */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,11 +37,16 @@ header .container {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem; /* Augmentation de l'espacement pour équilibrer avec le texte plus grand */
+}
+
+.logo img {
+    width: 100px; /* Augmentation de la taille du logo pour équilibrer avec le texte */
+    height: auto;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 5.25rem; /* Triplement de la taille : 1.75rem * 3 = 5.25rem */
     font-weight: 700;
 }
 
@@ -277,6 +282,11 @@ footer ul li a:hover {
     color: #fff;
 }
 
+/* Version monochrome du logo pour le footer (facultatif) */
+footer .logo img {
+    filter: brightness(0) invert(1); /* Convertit le logo en blanc pour contraste */
+}
+
 /* Responsivité */
 @media (max-width: 768px) {
     header .container {
@@ -290,6 +300,19 @@ footer ul li a:hover {
 
     header nav ul li {
         margin: 0 0.75rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem; /* Espacement sur mobile */
+        gap: 1rem; /* Réduction de l'espacement sur mobile */
+    }
+
+    .logo img {
+        width: 70px; /* Réduction de la taille du logo sur mobile */
+    }
+
+    header h1 {
+        font-size: 3rem; /* Réduction de la taille du texte sur mobile (5.25rem est trop grand) */
     }
 
     #hero h2 {
